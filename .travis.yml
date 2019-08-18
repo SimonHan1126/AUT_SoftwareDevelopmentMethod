@@ -4,7 +4,11 @@ node_js:
 
   - 10.16.0
 
-services: mongodb
+before_script:
+  - mkdir -p data/db
+  - mongod --dbpath=data/db &
+  - sleep 5
+  - mongo mydb_test --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
 
 script:
 
