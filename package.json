@@ -5,8 +5,7 @@
     "main": "app.js",
     "scripts": {
         "client": "cd client && npm start",
-        "start-babel": "babel-node --presets es2015 app.js",
-        "start" : "npm run start-babel && npm run client"
+        "start-babel": "babel-node --presets es2015 app.js"
     },
     "author": "Hemakshi Sachdev",
     "license": "ISC",
