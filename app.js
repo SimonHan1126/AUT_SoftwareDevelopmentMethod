@@ -9,7 +9,7 @@ import users from './routes/usersRoute.js'
 // mongoose.connect('mongodb://localhost/basic-mern-app');
 
 
-const uri = "mongodb+srv://Bohan:53659668>@cluster0-v69wi.gcp.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "mongodb+srv://Bohan:53659668@cluster0-v69wi.gcp.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
 
 // ===========end
